@@ -139,4 +139,19 @@ body {
 	#email-form input {
 		height: 7vh;
 	}	
+
+	#email-form input[type=email] {
+		padding: 0 5%;
+	}
+
+	#email-form input[type=submit] {
+		width: 20%;
+		box-shadow: 0 15px 10px -10px lightgray;
+		transition: 0.2s;
+	}
+
+	#email-form input[type=submit]:hover {
+		cursor: pointer;
+		filter: brightness(120%);
+	}
 }
