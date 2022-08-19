@@ -88,6 +88,7 @@ body {
 	background-position: center;
 	border: none;
 	height: 100%;
+	box-shadow: 0 15px 10px -10px lightgray;
 }
 
 .email-form input[type=submit]:hover {
@@ -97,6 +98,10 @@ body {
 
 /* Desktop/Laptop settings */
 @media screen and (min-width: 1081px) {
+	body {
+		background-image: url("images/bg-pattern-desktop.svg");
+	}
+
 	.logo-area, .page-title, .email-form {
 		float: left;
 		clear: left;
@@ -144,5 +149,13 @@ body {
 	.hero-container img {
 		width: 100%;
 		height: 100%;
+	}
+
+	.email-form input[type=email] {
+		padding: 0 5%;
+	}
+
+	.email-form input[type=submit] {
+		width: 20%;
 	}
 }
