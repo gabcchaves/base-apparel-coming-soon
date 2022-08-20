@@ -17,11 +17,10 @@
 			<p>Hello fellow shoppers! We're currently building our new
 			fashion store. Add your email bellow to stay up to date with
 			announcements and our launch deals.</p>
-			<form method="POST" novalidate>
+			<form method="POST" novalidate
+				  onsubmit="event.preventDefault(); validateEmail();">
 				<input id="email-input" type="email" placeholder="Email Address">
-				<input type="submit" value=""
-									 onsubmit="event.preventDefault();
-									 validateEmail();">
+				<input type="submit" value="">
 			</form>
 		</main>
 	</body>
