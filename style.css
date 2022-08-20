@@ -6,7 +6,6 @@ html, body {
 	padding: 0;
 	font-family: 'Josefin Sans';
 	font-size: 16pt;
-	font-size: 16pt;
 }
  
 body {
@@ -21,3 +20,49 @@ body {
 }
 
 /* General settings */
+body {
+	background-image: url("images/bg-pattern-desktop.svg");
+	background-repeat: no-repeat;
+	line-height: 1.5;
+}
+
+main h1 {
+	color: var(--dark-grayish-red);
+	font-weight: 500;
+}
+
+main h1 .highlight {
+	color: var(--desaturated-red);
+	font-weight: 300;
+}
+
+main p {
+	color: var(--desaturated-red);
+}
+
+main form {
+	border: 1px solid var(--desaturated-red);
+	border-radius: 30px;
+	position: relative;
+}
+
+main form * {
+	position: absolute;
+	height: 100%;
+}
+
+main form input[type=email] {
+	width: 100%;
+}
+
+main form input[type=submit] {
+	background-image:
+		url("images/icon-arrow.svg"),
+		linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	background-position: center;
+}
+
+.hero-container img {
+	width: 100%;
+	height: 100%;
+}
