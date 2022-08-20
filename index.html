@@ -19,7 +19,9 @@
 			announcements and our launch deals.</p>
 			<form method="POST" novalidate>
 				<input id="email-input" type="email" placeholder="Email Address">
-				<input type="submit" value="">
+				<input type="submit" value=""
+									 onsubmit="event.preventDefault();
+									 validateEmail();">
 			</form>
 		</main>
 	</body>
